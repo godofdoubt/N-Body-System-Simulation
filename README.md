@@ -66,12 +66,10 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 
 
 **Interacting with the Pygame Visualization:**
-
 Space: Pause/Play the simulation.
 L: Toggle object labels.
 O: Toggle historical orbit lines.
 P: Toggle projection lines from the N-dimensional position onto the 2D view.
-Mouse wheel - / +  =: Zoom In , Zoom Out.
 Up Arrow: Increase simulation speed.
 Down Arrow: Decrease simulation speed.
 A: Set simulation speed to Normal (1x).
@@ -84,6 +82,8 @@ F: Set simulation speed to Super Fast (200x).
 Mouse Wheel Up: Zoom In.
 Mouse Wheel Down: Zoom Out.
 Escape: Quit the simulation visualization.
+
+
 
 
 Special Thanks to

@@ -3,15 +3,16 @@
 This project provides a flexible N-dimensional simulation of gravitational interactions between multiple bodies, implemented in Python using numpy, scipy, pygame, and matplotlib. It includes a real-time Pygame visualization with interactive controls and tools for analyzing energy conservation and object trajectories.
 
 **Features**
-**N-Dimensional Simulation:** Simulate gravitational systems in any number of dimensions (configured during initialization).
-**Newtonian Gravity:** Accurate calculation of gravitational forces between all pairs of objects.
-**Robust Integration:** Uses scipy.integrate.solve_ivp with an adaptive step-size RK45 method for reliable simulation over time.
-**Pygame Visualization:** Real-time graphical display of the simulation state.
-**Interactive Controls:** Pause/play, zoom, adjust simulation speed, toggle labels and orbits, and cycle through projection dimensions directly within the visualization window.
-**Projection Lines:** Option to display projection lines from the N-dimensional position onto the 2D visualization plane.
-**Historical Orbits:** Display the past trajectories of objects.
-**Energy Analysis:** Plots kinetic, potential, and total energy over time to verify conservation.
-**Trajectory Analysis:** Plots object paths, including pairwise projections for higher dimensions.
+
+* **N-Dimensional Simulation:** Simulate gravitational systems in any number of dimensions (configured during initialization).
+* **Newtonian Gravity:** Accurate calculation of gravitational forces between all pairs of objects.
+* **Robust Integration:** Uses scipy.integrate.solve_ivp with an adaptive step-size RK45 method for reliable simulation over time.
+* **Pygame Visualization:** Real-time graphical display of the simulation state.
+* **Interactive Controls:** Pause/play, zoom, adjust simulation speed, toggle labels and orbits, and cycle through projection dimensions directly within the visualization window.
+* **Projection Lines:** Option to display projection lines from the N-dimensional position onto the 2D visualization plane.
+* **Historical Orbits:** Display the past trajectories of objects.
+* **Energy Analysis:** Plots kinetic, potential, and total energy over time to verify conservation.
+* **Trajectory Analysis:** Plots object paths, including pairwise projections for higher dimensions.
 
 
 ## Installation

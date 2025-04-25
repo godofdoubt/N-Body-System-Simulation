@@ -37,15 +37,16 @@ After the Pygame visualization is closed (either by reaching the end of the simu
 
 ## Code Structure
 The core functionality is encapsulated within the PhysicsSimulation class:
-**__init__(self, dimensions=3):** Initializes the simulation with the specified number of dimensions and Pygame setup.
-**add_object(self, mass, position, velocity):** Adds a new object to the simulation with its properties.
-**calculate_acceleration(self, positions):** Computes the net gravitational acceleration for all objects based on their current positions.
-**derivative(self, t, y):** Defines the system of first-order ODEs for the solver.
-**run_simulation(self, duration, dt=0.01):** Executes the simulation using solve_ivp and stores the results in self.history.
-**visualize:** Handles the Pygame visualization loop, rendering objects, orbits, and responding to user input.
-**analyze_energy_conservation:** Plots the energy components over time.
-**analyze_trajectories:** Plots the paths of the objects.
-**The main execution block (if __name__ == "__main__":)** demonstrates how to create a PhysicsSimulation instance, add objects, run the simulation, and trigger the visualization and analysis.
+
+* **__init__(self, dimensions=3):** Initializes the simulation with the specified number of dimensions and Pygame setup.
+* **add_object(self, mass, position, velocity):** Adds a new object to the simulation with its properties.
+* **calculate_acceleration(self, positions):** Computes the net gravitational acceleration for all objects based on their current positions.
+* **derivative(self, t, y):** Defines the system of first-order ODEs for the solver.
+* **run_simulation(self, duration, dt=0.01):** Executes the simulation using solve_ivp and stores the results in self.history.
+* **visualize:** Handles the Pygame visualization loop, rendering objects, orbits, and responding to user input.
+* **analyze_energy_conservation:** Plots the energy components over time.
+* **analyze_trajectories:** Plots the paths of the objects.
+* **The main execution block (if __name__ == "__main__":)** demonstrates how to create a PhysicsSimulation instance, add objects, run the simulation, and trigger the visualization and analysis.
 
 
 **Scientific Accuracy and Math**

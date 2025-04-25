@@ -57,7 +57,7 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 **Numerical Stability:** A small epsilon value (1e-5) is added to the denominator in the acceleration calculation. This is a common technique to prevent division by zero or extremely large forces when objects get very close, which can cause numerical instability and lead to inaccurate or divergent results in a discrete-time simulation. While it slightly deviates from the pure inverse square law at extremely small distances, it is necessary for practical simulation stability.
 **Energy Conservation:** In an ideal gravitational system with no external forces, the total energy (kinetic + potential) should be conserved. The energy analysis plot serves as a check on the numerical accuracy of the integration; small fluctuations in total energy are expected due to the discrete nature of numerical integration, but large drifts would indicate a problem.
 
-## Interacting with the Pygame Visualization:
+**Interacting with the Pygame Visualization:**
 Space: Pause/Play the simulation.
 L: Toggle object labels.
 O: Toggle historical orbit lines.

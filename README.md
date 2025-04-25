@@ -2,7 +2,7 @@
 
 This project provides a flexible N-dimensional simulation of gravitational interactions between multiple bodies, implemented in Python using numpy, scipy, pygame, and matplotlib. It includes a real-time Pygame visualization with interactive controls and tools for analyzing energy conservation and object trajectories.
 
-## Features
+**Features**
 **N-Dimensional Simulation:** Simulate gravitational systems in any number of dimensions (configured during initialization).
 **Newtonian Gravity:** Accurate calculation of gravitational forces between all pairs of objects.
 **Robust Integration:** Uses scipy.integrate.solve_ivp with an adaptive step-size RK45 method for reliable simulation over time.
@@ -46,15 +46,21 @@ The core functionality is encapsulated within the PhysicsSimulation class:
 **analyze_trajectories:** Plots the paths of the objects.
 **The main execution block (if __name__ == "__main__":)** demonstrates how to create a PhysicsSimulation instance, add objects, run the simulation, and trigger the visualization and analysis.
 
-## Scientific Accuracy and Math
+
+**Scientific Accuracy and Math**
 
 The simulation is based on **Newton's Law of Universal Gravitation** and the principles of classical mechanics.
 
 **Gravitational Force:** The force between two objects is calculated using the inverse square law, proportional to the product of their masses and inversely proportional to the square of the distance between them.
+
 **N-Body Problem:** The simulation solves the N-body problem, where each object's acceleration is the vector sum of the gravitational forces exerted by all other objects.
+
 **Ordinary Differential Equations (ODEs):** The motion of the system is described by a system of second-order ODEs (Newton's second law, F=ma). This is converted into a system of first-order ODEs by treating position and velocity as separate state variables.
+
 **Numerical Integration:** The solve_ivp function with the RK45 method is used to numerically integrate these ODEs over time. RK45 (Runge-Kutta 4(5)) is a standard method that provides a good balance of accuracy and efficiency by adaptively adjusting the step size (dt) during the simulation to maintain a specified error tolerance.
+
 **Numerical Stability:** A small epsilon value (1e-5) is added to the denominator in the acceleration calculation. This is a common technique to prevent division by zero or extremely large forces when objects get very close, which can cause numerical instability and lead to inaccurate or divergent results in a discrete-time simulation. While it slightly deviates from the pure inverse square law at extremely small distances, it is necessary for practical simulation stability.
+
 **Energy Conservation:** In an ideal gravitational system with no external forces, the total energy (kinetic + potential) should be conserved. The energy analysis plot serves as a check on the numerical accuracy of the integration; small fluctuations in total energy are expected due to the discrete nature of numerical integration, but large drifts would indicate a problem.
 
 Special Thanks to

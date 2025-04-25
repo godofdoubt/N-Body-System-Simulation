@@ -66,6 +66,7 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 
 
 **Interacting with the Pygame Visualization:**
+
 Space: Pause/Play the simulation.
 L: Toggle object labels.
 O: Toggle historical orbit lines.

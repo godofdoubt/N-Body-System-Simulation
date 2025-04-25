@@ -49,7 +49,7 @@ The core functionality is encapsulated within the PhysicsSimulation class:
 * **The main execution block (if __name__ == "__main__":)** demonstrates how to create a PhysicsSimulation instance, add objects, run the simulation, and trigger the visualization and analysis.
 
 
-**Scientific Accuracy and Math**
+## Scientific Accuracy and Math
 
 The simulation is based on **Newton's Law of Universal Gravitation** and the principles of classical mechanics.
 
@@ -67,7 +67,7 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 
 
 
-Interacting with the Pygame Visualization:
+## Interacting with the Pygame Visualization:
 
 * Space: Pause/Play the simulation.
 * L: Toggle object labels.

@@ -66,23 +66,22 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 
 
 **Interacting with the Pygame Visualization:**
-Space: Pause/Play the simulation.
-L: Toggle object labels.
-O: Toggle historical orbit lines.
-P: Toggle projection lines from the N-dimensional position onto the 2D view.
-Up Arrow: Increase simulation speed.
-Down Arrow: Decrease simulation speed.
-A: Set simulation speed to Normal (1x).
-S: Set simulation speed to Fast (10x).
-D: Set simulation speed to Very Fast (50x).
-F: Set simulation speed to Super Fast (200x).
-1: Cycle the first dimension projected onto the horizontal axis.
-2: Cycle the second dimension projected onto the vertical axis.
-3: Cycle the third dimension used for size/brightness scaling (only in >2D).
-Mouse Wheel Up: Zoom In.
-Mouse Wheel Down: Zoom Out.
-Escape: Quit the simulation visualization.
-
+* Space: Pause/Play the simulation.
+* L: Toggle object labels.
+* O: Toggle historical orbit lines.
+* P: Toggle projection lines from the N-dimensional position onto the 2D view.
+* Up Arrow: Increase simulation speed.
+* Down Arrow: Decrease simulation speed.
+* A: Set simulation speed to Normal (1x).
+* S: Set simulation speed to Fast (10x).
+* D: Set simulation speed to Very Fast (50x).
+* F: Set simulation speed to Super Fast (200x).
+* 1: Cycle the first dimension projected onto the horizontal axis.
+* 2: Cycle the second dimension projected onto the vertical axis.
+* 3: Cycle the third dimension used for size/brightness scaling (only in >2D).
+* Mouse Wheel Up: Zoom In.
+* Mouse Wheel Down: Zoom Out.
+* Escape: Quit the simulation visualization.
 
 
 

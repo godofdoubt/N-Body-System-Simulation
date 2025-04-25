@@ -57,26 +57,6 @@ The simulation is based on **Newton's Law of Universal Gravitation** and the pri
 **Numerical Stability:** A small epsilon value (1e-5) is added to the denominator in the acceleration calculation. This is a common technique to prevent division by zero or extremely large forces when objects get very close, which can cause numerical instability and lead to inaccurate or divergent results in a discrete-time simulation. While it slightly deviates from the pure inverse square law at extremely small distances, it is necessary for practical simulation stability.
 **Energy Conservation:** In an ideal gravitational system with no external forces, the total energy (kinetic + potential) should be conserved. The energy analysis plot serves as a check on the numerical accuracy of the integration; small fluctuations in total energy are expected due to the discrete nature of numerical integration, but large drifts would indicate a problem.
 
-**Interacting with the Pygame Visualization:**
-Space: Pause/Play the simulation.
-L: Toggle object labels.
-O: Toggle historical orbit lines.
-P: Toggle projection lines from the N-dimensional position onto the 2D view.
-+ / =: Zoom In.
--: Zoom Out.
-Up Arrow: Increase simulation speed.
-Down Arrow: Decrease simulation speed.
-A: Set simulation speed to Normal (1x).
-S: Set simulation speed to Fast (10x).
-D: Set simulation speed to Very Fast (50x).
-F: Set simulation speed to Super Fast (200x).
-1: Cycle the first dimension projected onto the horizontal axis.
-2: Cycle the second dimension projected onto the vertical axis.
-3: Cycle the third dimension used for size/brightness scaling (only in >2D).
-Mouse Wheel Up: Zoom In.
-Mouse Wheel Down: Zoom Out.
-Escape: Quit the simulation visualization.
-
 Special Thanks to
 Dot Physics Youtube Channel , Gemini , Claude and Grok .
 
